@@ -7,7 +7,7 @@ fn main() {
     }
     println!("Sum of all elements in array is: {}", sum);
 
-    let arr2 = [3,7,2,9,4];
+    let arr2 = [3,7,2,9,4,4,9];
     let mut max = 0;
 
     for i in 0..arr2.len(){
