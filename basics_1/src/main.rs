@@ -18,6 +18,13 @@ fn main() {
 
     println!("Max element in array2 is : {} ", max);
 
+    let mut min = arr2[0];
+    for i in 0..arr2.len(){
+        if arr2[i]<min{
+            min = arr2[i];
+        }
+    }
+    println!("Min element in array2 is : {} ", min);
 
     
 }
