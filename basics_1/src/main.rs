@@ -14,10 +14,10 @@ fn main() {
    let mut j = v.len()-1;
 
    while i<j{
-      v.swap(i, j);
-      // v[i]=v[i]+v[j];
-      // v[j]=v[i]-v[j];
-      // v[i]=v[i]- v[j];
+      //v.swap(i, j);
+      v[i]=v[i]+v[j];
+      v[j]=v[i]-v[j];
+      v[i]=v[i]- v[j];
       i+=1;
       j-=1;
    }
