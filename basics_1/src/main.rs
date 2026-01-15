@@ -13,11 +13,23 @@ fn main() {
     let mut i = 0;
     let mut j = v.len() - 1;
 
-    while i < j {
-        swap(&mut v, i, j);
+    //using while loop
 
-        i += 1;
-        j -= 1;
+    //  while i < j {
+    //      swap(&mut v, i, j);
+
+    //      i += 1;
+    //      j -= 1;
+    //  }
+
+    //using for loop
+    for i in 0..v.len() {
+        if i < j {
+            swap(&mut v, i, j);
+            j -= 1;
+        } else {
+            break;
+        }
     }
 
     println!("{:?}", v);
