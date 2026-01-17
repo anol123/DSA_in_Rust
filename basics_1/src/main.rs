@@ -36,29 +36,29 @@ fn binary_search(v: &mut Vec<i32>, target: &i32) -> i32 {
     let mut low = 0;
     let mut high = v.len() - 1;
 
-    while low <= high {
-        let mid = low + (high - low) / 2;
-        if v[mid] == *target {
-            return mid as i32;
-        } else if v[mid] > *target {
-            high = mid - 1;
-        } else {
-            low = mid + 1;
-        }
-    }
-
-    // for mut i in 0..v.len() / 2 {
-    //     if low < high {
-    //         let mid = low - (low - high) / 2;
-    //         if v[mid] == *target {
-    //             return *target as i32;
-    //         } else if v[mid] > *target {
-    //             high = mid - 1;
-    //         } else {
-    //             low = mid + 1;
-    //         }
+    // while low <= high {
+    //     let mid = low + (high - low) / 2;
+    //     if v[mid] == *target {
+    //         return mid as i32;
+    //     } else if v[mid] > *target {
+    //         high = mid - 1;
+    //     } else {
+    //         low = mid + 1;
     //     }
-    //     i += 1;
     // }
+
+    for mut i in 0..v.len() / 2 {
+        if low <= high {
+            let mid = low + (high - low) / 2;
+            if v[mid] == *target {
+                return mid as i32;
+            } else if v[mid] > *target {
+                high = mid - 1;
+            } else {
+                low = mid + 1;
+            }
+        }
+        i += 1;
+    }
     return -1;
 }
