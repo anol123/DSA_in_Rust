@@ -1,7 +1,10 @@
 fn main() {
-    let mut v = vec![2, 4, 6, 8, 10, 12];
-    let target = 4;
+    let mut v = vec![17, 3, 0, 1, 8, 6, 54, 89, 46, 24, 22];
+    let target = 24;
 
+    println!("length of vector: {}", v.len());
+
+    //print even elements
     for i in 0..v.len() {
         if v[i] % 2 == 0 {
             println!("{}", v[i]);
