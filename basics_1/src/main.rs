@@ -11,6 +11,7 @@ fn main() {
         }
     }
 
+    //since the unsorted vector will be sorted so the vector will get changed and hence we get a different result
     //binary search
     println!(
         "Binary search output is: {}",
