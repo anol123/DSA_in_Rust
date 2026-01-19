@@ -1,4 +1,4 @@
-fn vec_1() {
+pub fn vec_1() {
     let mut v = vec![1, 2, 3, 4, 5];
     // v.push(2);
     // println!("{:?}",v);
