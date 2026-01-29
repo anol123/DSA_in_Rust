@@ -9,11 +9,15 @@ fn main() {
 
     bubble_sort(&mut v);
     selection_sort(&mut v);
+    insertion_sort(&mut v);
 }
 
 pub fn bubble_sort(v: &mut Vec<i32>) {
     todo!()
 }
 pub fn selection_sort(v: &mut Vec<i32>) {
+    todo!()
+}
+pub fn insertion_sort(v: &mut Vec<i32>) {
     todo!()
 }
