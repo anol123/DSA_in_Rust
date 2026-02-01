@@ -21,3 +21,4 @@ pub fn selection_sort(v: &mut Vec<i32>) {
 pub fn insertion_sort(v: &mut Vec<i32>) {
     todo!()
 }
+}
