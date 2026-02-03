@@ -31,7 +31,7 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
     }
 }
 pub fn selection_sort(v: &mut Vec<i32>) {
-    println!("!------------------Sorting through selection sort------------------!")
+    println!("!------------------Sorting through selection sort------------------!");
     let n = v.len();
 
     for i in 0..n {
