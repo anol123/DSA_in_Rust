@@ -20,14 +20,14 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
     for i in 0..v.len() {
         let mut swapped = false;
         for j in 0..v.len() - i - 1 {
-            if (v[i] > v[j + 1]) {
-                v.swap(i, j + 1);
-                swapped = true;
+            if (v[j] > v[j + 1]) {
+                v.swap(j, j + 1);
+                //swapped = true;
             }
         }
-        if !swapped {
-            break;
-        }
+        // if !swapped {
+        //     break;
+        // }
     }
 }
 pub fn selection_sort(v: &mut Vec<i32>) {
