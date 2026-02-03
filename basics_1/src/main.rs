@@ -22,20 +22,20 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
         for j in 0..v.len() - i - 1 {
             if (v[j] > v[j + 1]) {
                 v.swap(j, j + 1);
-                //swapped = true;
+                swapped = true;
             }
         }
-        // if !swapped {
-        //     break;
-        // }
+        if !swapped {
+            break;
+        }
     }
 }
-pub fn selection_sort(v: &mut Vec<i32>) {
-    todo!()
-}
-pub fn insertion_sort(v: &mut Vec<i32>) {
-    todo!()
-}
-pub fn merge_sort(v: &mut Vec<i32>) {
-    todo!()
-}
+// pub fn selection_sort(v: &mut Vec<i32>) {
+//     todo!()
+// }
+// pub fn insertion_sort(v: &mut Vec<i32>) {
+//     todo!()
+// }
+// pub fn merge_sort(v: &mut Vec<i32>) {
+//     todo!()
+// }
