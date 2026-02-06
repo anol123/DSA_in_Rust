@@ -48,6 +48,8 @@ pub fn selection_sort(v: &mut Vec<i32>) {
     }
 }
 pub fn insertion_sort(v: &mut Vec<i32>) {
+    println!("!------------------Sorting through insertion sort------------------!");
+
     let n = v.len();
 
     for i in 1..n {
