@@ -9,9 +9,9 @@ fn main() {
 
     let mut v = vec![2, 5, 3, 9, 5, 6, 1];
 
-    // bubble_sort(&mut v);
+    bubble_sort(&mut v);
     // selection_sort(&mut v);
-    insertion_sort(&mut v);
+    //insertion_sort(&mut v);
     // merge_sort(&mut v);
     println!("{:?}", v);
 }
