@@ -16,21 +16,21 @@ fn main() {
     println!("{:?}", v);
 }
 
-// pub fn bubble_sort(v: &mut Vec<i32>) {
-//     println!("!------------------Sorting through selection sort------------------!");
-//     for i in 0..v.len() {
-//         let mut swapped = false;
-//         for j in 0..v.len() - i - 1 {
-//             if (v[j] > v[j + 1]) {
-//                 v.swap(j, j + 1);
-//                 swapped = true;
-//             }
-//         }
-//         if !swapped {
-//             break;
-//         }
-//     }
-// }
+pub fn bubble_sort(v: &mut Vec<i32>) {
+    println!("!------------------Sorting through selection sort------------------!");
+    for i in 0..v.len() {
+        let mut swapped = false;
+        for j in 0..v.len() - i - 1 {
+            if (v[j] > v[j + 1]) {
+                v.swap(j, j + 1);
+                swapped = true;
+            }
+        }
+        if !swapped {
+            break;
+        }
+    }
+}
 // pub fn selection_sort(v: &mut Vec<i32>) {
 //     println!("!------------------Sorting through selection sort------------------!");
 //     let n = v.len();
@@ -47,23 +47,23 @@ fn main() {
 //         v.swap(i, min_idx);
 //     }
 // }
-pub fn insertion_sort(v: &mut Vec<i32>) {
-    println!("!------------------Sorting through insertion sort------------------!");
+// pub fn insertion_sort(v: &mut Vec<i32>) {
+//     println!("!------------------Sorting through insertion sort------------------!");
 
-    let n = v.len();
+//     let n = v.len();
 
-    for i in 1..n {
-        let key = v[i];
-        let mut j = i;
+//     for i in 1..n {
+//         let key = v[i];
+//         let mut j = i;
 
-        while j > 0 && v[j - 1] > key {
-            v[j] = v[j - 1];
-            j -= 1;
-        }
+//         while j > 0 && v[j - 1] > key {
+//             v[j] = v[j - 1];
+//             j -= 1;
+//         }
 
-        v[j] = key;
-    }
-}
+//         v[j] = key;
+//     }
+// }
 pub fn merge_sort(v: &mut Vec<i32>) {
     todo!()
 }
