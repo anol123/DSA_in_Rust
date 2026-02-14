@@ -11,7 +11,7 @@ fn main() {
 
     bubble_sort(&mut v);
     // selection_sort(&mut v);
-    //insertion_sort(&mut v);
+    insertion_sort(&mut v);
     // merge_sort(&mut v);
     println!("{:?}", v);
 }
@@ -47,23 +47,24 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
 //         v.swap(i, min_idx);
 //     }
 // }
-// pub fn insertion_sort(v: &mut Vec<i32>) {
-//     println!("!------------------Sorting through insertion sort------------------!");
 
-//     let n = v.len();
+pub fn insertion_sort(v: &mut Vec<i32>) {
+    println!("!------------------Sorting through insertion sort------------------!");
 
-//     for i in 1..n {
-//         let key = v[i];
-//         let mut j = i;
+    let n = v.len();
 
-//         while j > 0 && v[j - 1] > key {
-//             v[j] = v[j - 1];
-//             j -= 1;
-//         }
+    for i in 1..n {
+        let key = v[i];
+        let mut j = i;
 
-//         v[j] = key;
-//     }
-// }
+        while j > 0 && v[j - 1] > key {
+            v[j] = v[j - 1];
+            j -= 1;
+        }
+
+        v[j] = key;
+    }
+}
 pub fn merge_sort(v: &mut Vec<i32>) {
     todo!()
 }
