@@ -11,8 +11,8 @@ fn main() {
 
     //bubble_sort(&mut v);
     //selection_sort(&mut v);
-    //insertion_sort(&mut v);
-    merge_sort(&mut v);
+    insertion_sort(&mut v);
+    //merge_sort(&mut v);
     println!("{:?}", v);
 }
 
