@@ -31,22 +31,22 @@ pub fn bubble_sort(v: &mut Vec<i32>) {
         }
     }
 }
-pub fn selection_sort(v: &mut Vec<i32>) {
-    println!("!------------------Sorting through selection sort------------------!");
-    let n = v.len();
+// pub fn selection_sort(v: &mut Vec<i32>) {
+//     println!("!------------------Sorting through selection sort------------------!");
+//     let n = v.len();
 
-    for i in 0..n {
-        let mut min_idx = i;
+//     for i in 0..n {
+//         let mut min_idx = i;
 
-        for j in i + 1..n {
-            if v[j] < v[min_idx] {
-                min_idx = j;
-            }
-        }
+//         for j in i + 1..n {
+//             if v[j] < v[min_idx] {
+//                 min_idx = j;
+//             }
+//         }
 
-        v.swap(i, min_idx);
-    }
-}
+//         v.swap(i, min_idx);
+//     }
+// }
 
 pub fn insertion_sort(v: &mut Vec<i32>) {
     println!("!------------------Sorting through insertion sort------------------!");
