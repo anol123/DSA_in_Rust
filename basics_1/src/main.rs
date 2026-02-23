@@ -16,21 +16,21 @@ fn main() {
     println!("{:?}", v);
 }
 
-pub fn bubble_sort(v: &mut Vec<i32>) {
-    println!("!------------------Sorting through bubble sort------------------!");
-    for i in 0..v.len() {
-        let mut swapped = false;
-        for j in 0..v.len() - i - 1 {
-            if (v[j] > v[j + 1]) {
-                v.swap(j, j + 1);
-                swapped = true;
-            }
-        }
-        if !swapped {
-            break;
-        }
-    }
-}
+// pub fn bubble_sort(v: &mut Vec<i32>) {
+//     println!("!------------------Sorting through bubble sort------------------!");
+//     for i in 0..v.len() {
+//         let mut swapped = false;
+//         for j in 0..v.len() - i - 1 {
+//             if (v[j] > v[j + 1]) {
+//                 v.swap(j, j + 1);
+//                 swapped = true;
+//             }
+//         }
+//         if !swapped {
+//             break;
+//         }
+//     }
+// }
 // pub fn selection_sort(v: &mut Vec<i32>) {
 //     println!("!------------------Sorting through selection sort------------------!");
 //     let n = v.len();
