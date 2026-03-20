@@ -1,5 +1,5 @@
 pub fn search() {
-    let mut v = vec![17, 3, 0, 1, 8, 6, 54, 89, 46, 24, 22];
+    let mut v = vec![17, 3, 0, 1, 8, 16, 54, 89, 46, 24, 22];
     let target = 24;
 
     println!("length of vector: {}", v.len());
