@@ -10,9 +10,10 @@ fn main() {
     let mut v = vec![2, 5, 3, 9, 5, 6, 1];
 
     //bubble_sort(&mut v);
-    selection_sort(&mut v);
+    //selection_sort(&mut v);
     //insertion_sort(&mut v);
     //merge_sort(&mut v);
+    radix_sort(&mut v);
     println!("{:?}", v);
 }
 
@@ -70,6 +71,6 @@ pub fn selection_sort(v: &mut Vec<i32>) {
 // }
 // }
 
-// pub fn radix_sort(v: &mut Vec<i32>) {
-//     todo!()
-// }
+pub fn radix_sort(v: &mut Vec<i32>) {
+    todo!()
+}
